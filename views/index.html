@@ -15,7 +15,7 @@
     <h1>URL Shortener Microservice</h1>
     <main>
       <section>
-        <form action="api/shorturl" method="POST">
+        <form id="form" action="api/shorturl" method="POST">
           <fieldset>
             <legend>URL Shortener</legend>
             <label for="url_input">URL:</label>
@@ -24,6 +24,8 @@
           </fieldset>
         </form>
       </section>
+      <section id="result"></section>
+      <script src="/public/main.js"></script>
     </main>
     <footer>
       <p>By <a href="https://www.freecodecamp.org/">freeCodeCamp</a></p>

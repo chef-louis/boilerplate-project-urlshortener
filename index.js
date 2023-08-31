@@ -84,7 +84,7 @@ app.post('/api/shorturl', async function(req, res) {
   try {
     longUrl = new URL(req.body.url);
   } catch (err) {
-    return res.status(400).send({ error: 'invalid URL' });
+    return res.status(400).send({ error: 'invalid url' });
   }
 
   dns.lookup(longUrl.hostname, (err) => {
